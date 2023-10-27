@@ -13,11 +13,10 @@ private:
 
 	int calculatePuntuation(const vector<int>&);
 
-	void function1(ifstream&);
-	void function2(int, string&, int&, vector<int>&);
-
 public:
 	DriverScore();
 	void loadPuntuation();
+	void loadDriverData(int, ifstream&, int);
+	void parseRaceResults(string&, int&, vector<int>&);
 	void printPuntuation();
 };
